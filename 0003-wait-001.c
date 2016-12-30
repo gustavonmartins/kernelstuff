@@ -3,14 +3,12 @@
 #include <sys/types.h>
 
 #define MAX_COUNT 200
-#define BUF_SIZE 100
 
 void doChildJob(int);
 void doParentJob(int);
 
 int main (void) {
   pid_t pid;
-  char buf[BUF_SIZE];
 
   printf("Stage 1: Forking baby\n");
   pid=fork();
