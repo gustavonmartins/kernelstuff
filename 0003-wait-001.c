@@ -14,11 +14,11 @@ int main (void) {
   pid=fork();
   if (pid<0){
     printf("Stage 1: Fork fail\n”");
-    exit(1);
+    return(-1);
   }
   else if (pid==0){
     doChildJob(1);
-    printf("Child is now wants to calculate more!\n");
+    printf("Child is done!\n");
   }
   else if (pid>0) {
     printf("Parent:Before you freeze me, let me spea...\n");
