@@ -21,7 +21,7 @@ int main (void) {
     doChildJob(1);
     printf("Child is now wants to calculate more!\n");
     execvp("/usr/bin/galculator",NULL);
-    printf("April fools day: This text will never see daylight\n");
+    printf("April fools day: This text will never see the light of the day\n");
   }
   else if (pid>0) {
     printf("Parent:Before you freeze me, let me spea...\n");
